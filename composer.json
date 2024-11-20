@@ -1,0 +1,39 @@
+{
+  "name": "RAEfremenkov/laravel-clean-architecture-template",
+  "description": "PHP clean architecture integration for Laravel",
+  "keywords": ["laravel", "ddd", "clean-architecture"],
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Roman Efremenkov",
+      "email": "ra.dir@mail.ru"
+    }
+  ],
+  "require": {
+    "php": "^8.0",
+    "illuminate/support": "^9|^10|^11",
+    "doctrine/orm": "^3",
+    "doctrine/dbal": "^4",
+    "symfony/cache": "^7"
+  },
+  "require-dev": {
+    "mockery/mockery": "^1.3.3",
+    "phpunit/phpunit": "^9.6|^10.5"
+  },
+  "autoload": {
+    "psr-4": {
+      "RAEfremenkov\\CleanArch\\Api\\": "src/Api/",
+      "RAEfremenkov\\CleanArch\\Core\\": "src/Core/",
+      "RAEfremenkov\\CleanArch\\Infrastructure\\": "src/Infrastructure/",
+      "RAEfremenkov\\CleanArch\\Utils\\": "src/Utils/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "RAEfremenkov\\CleanArch\\Tests\\": "src/Tests/"
+    }
+  },
+  "minimum-stability": "stable",
+  "prefer-stable": true,
+  "version": "1.0.0"
+}
